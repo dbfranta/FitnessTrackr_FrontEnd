@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+
+.app {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 72px auto
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+a:link, #logOut{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover, a:active, #logOut:hover, #logOut:active  {
+    text-decoration: underline;
+}
+
+#loggedInStatus {
+    display: flex;
+    justify-content: flex-end;
+    color: red;
+    padding-right: 8px;
+}
+
+#links a, #logOut{
+    padding: 8px;
+    align-items: center;
+    color: blue;
+    background-color: white;
+}
+
+#links {
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#logOut {
+    padding: 8;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    border: none
+}
+
+#links button:focus {
+    outline: none;
+    outline: 0px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    padding-left: 36px;
+    font-size: 36px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color:crimson
+}
+
+body {
+    height: 100vh;
+}
+
+#app {
+    height: 100%;
+}
+
+.registerUser, input {
+    margin-left: 24px;
+}
+
+#logOut {
+    display: flex;
+    align-self: flex-end;
+}
+
+#Profile {
+    height: 100;
+}
+
+.userHub {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+}
+
+.loginPage {
+    height: 100%;
+    border: 2px solid red;
+    display: grid;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.loginForm {    
+    height: 200px;
+    width: 300px;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+}
+
+.signupPage, .addPostPage, #home{
+    height: 100%;
+    border: 2px solid red;
+    display: grid;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#registerUser, #addPost {
+    height: 200px;
+    width: 300px;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#registerUser label, #addPost label {
+    font-weight: bold;
+}
+
+
+
+.loginForm button, #registerUser button, #addPost button{
+    background-color: darkgray;
+    border-radius: 5px;
+    background-color: crimson;
+    color: white;
+    font-size: larger;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.postCard h1 {
+    background-color: crimson;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+}
+
+.postCard {
+    background-color: darkgray;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 2px;
+}
+
+.postCard button {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: darkslategray;
+    color: white;
+    font-size: large;
+    padding: 2px;
+}
+
+.postCard input {
+    background-color: lightgrey
+}
+
+.message {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: darkgray;
+}
+
+.message button {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: darkslategray;
+    color: white;
+    font-size: large;
+    padding: 2px;
+}
+
+.message input {
+    background-color: lightgrey
+}
+
+.message h1 {
+    background-color: crimson;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+}
+
+#deletePost {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: darkslategray;
+    color: white;
+    font-size: large;
+    padding: 2px;
+}
+
+hr {
+    border-bottom: 2px solid black;
+}
