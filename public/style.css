@@ -20,6 +20,7 @@
 
 #navbar {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -81,6 +82,20 @@ body {
     height: 100%;
 }
 
+#createActivity #createRoutine{
+    height: 200px;
+    width: 300px;
+    margin-bottom: 20px;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr
+}
+
+#activites {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
 .registerUser, input {
     margin-left: 24px;
 }
@@ -100,7 +115,7 @@ body {
     grid-template-columns: 5fr 4fr;
 }
 
-.loginPage {
+.loginPage, .signupPage {
     height: 100%;
     border: 2px solid red;
     display: grid;
@@ -117,7 +132,16 @@ body {
     
 }
 
-.signupPage, .addPostPage, #home{
+
+#myRoutines {
+height: 100%;
+border: 2px solid red;
+display: grid;
+padding-left: 24px;
+padding-right: 24px;
+}
+
+#home, #activites, #routines{
     height: 100%;
     border: 2px solid red;
     display: grid;
@@ -125,7 +149,15 @@ body {
     align-content: center;
 }
 
-#registerUser, #addPost {
+#createRoutine{
+    height: 200px;
+    width: 300px;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+#registerUser{
     height: 200px;
     width: 300px;
     justify-self: center;
@@ -133,13 +165,13 @@ body {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-#registerUser label, #addPost label {
+#registerUser label{
     font-weight: bold;
 }
 
 
 
-.loginForm button, #registerUser button, #addPost button{
+.loginForm button, #registerUser button, #createActivity button, #myRoutines button{
     background-color: darkgray;
     border-radius: 5px;
     background-color: crimson;
@@ -154,67 +186,6 @@ input {
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
-
-.postCard h1 {
-    background-color: crimson;
-    border-top-right-radius: 2px;
-    border-top-left-radius: 2px;
-}
-
-.postCard {
-    background-color: darkgray;
-    border: 2px solid black;
-    border-radius: 5px;
-    margin: 5px;
-    padding: 2px;
-}
-
-.postCard button {
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: darkslategray;
-    color: white;
-    font-size: large;
-    padding: 2px;
-}
-
-.postCard input {
-    background-color: lightgrey
-}
-
-.message {
-    border: 2px solid black;
-    border-radius: 5px;
-    background-color: darkgray;
-}
-
-.message button {
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: darkslategray;
-    color: white;
-    font-size: large;
-    padding: 2px;
-}
-
-.message input {
-    background-color: lightgrey
-}
-
-.message h1 {
-    background-color: crimson;
-    border-top-right-radius: 2px;
-    border-top-left-radius: 2px;
-}
-
-#deletePost {
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: darkslategray;
-    color: white;
-    font-size: large;
-    padding: 2px;
 }
 
 hr {

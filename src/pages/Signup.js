@@ -1,9 +1,10 @@
-import { registerUser } from "../api" //-Need to add to api
+import { registerUser } from "../api"
 import { useState} from 'react'
 
 const Signup = ({userName, setUserName, userPassword, setUserPassword}) => {
 
-    const [confirmPassword, setConfirmPassword] = useState('');
+const [confirmPassword, setConfirmPassword] = useState('');
+
 return (
     <div class="signupPage">
         <form id="registerUser"

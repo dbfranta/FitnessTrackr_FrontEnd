@@ -9,7 +9,6 @@ const Login = ({userName, setUserName, userPassword, setUserPassword, setLoggedI
                     event.preventDefault();
                     try {
                         const results = await userLogin(userName, userPassword);
-                        //alert(results.data.message)
                         localStorage.setItem('token', results.token)
                         setLoggedIn(true)                                                                   
                     } catch (error) {

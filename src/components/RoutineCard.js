@@ -1,10 +1,5 @@
-import {useState, useEffect} from 'react'
-import {fetchRoutines} from '../api/index'
-
 const RoutineCard = ({routine}) => {
     return (
-        routine.activities[0]
-        ?
         <div key={routine.id}>
             <p>Routine Name: {routine.name}</p>
             <p>Routine Creator: {routine.creatorName}</p>
@@ -18,9 +13,8 @@ const RoutineCard = ({routine}) => {
             </div>
             <hr></hr>
         </div>
-        :
-        <div></div>
     )
 }
 
 export default RoutineCard;
+
